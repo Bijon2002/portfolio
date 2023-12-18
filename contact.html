@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+            a {
+      color: #FFFFFF; /* Set the color for unvisited links */
+      text-decoration: none; /* Remove the underline */
+    }
+
+    /* This style will be applied to visited links */
+    a:visited {
+      color: ; /* Set the color for visited links, if needed */
+    }
+
+    /* This style will be applied to links when hovered */
+    a:hover {
+      color: #FF0000; /* Set the color for links when hovered, if needed */
+    }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('back.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            margin-bottom: 40px;
+        }
+
+        .contact-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .gmail{
+                display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 10px;
+        }
+        .gmail:hover{
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        .linkedin{
+                display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 10px;
+        }
+        .linkedin:hover{
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+
+
+
+
+        footer {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Projects</a>
+            <a href="#contact">Contact</a>
+            <!-- Add more navigation links as needed -->
+        </nav>
+    </header>
+
+    <div id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-item">
+            <h3>Email</h3>
+            <button> <a href="bijonbjosilin@gmail.com" class="gmail" target="_blank">bijonbijosilin@gmail.com</a></button>
+        </div>
+
+        <div class="contact-item">
+            <h3>LinkedIn</h3>
+            <button><a href="https://www.linkedin.com/in/marisilin-bijosilin"class = "linkedin" target="_blank">MARISILIN-BIJOSILIN</a></button>
+        </div>
+
+        <div class="contact-item">
+            <h3>Mobile Number</h3>
+            <p>+94 720 172 910</p>
+        </div>
+
+    </div>
+
+    <footer>
+       <p><a href="bijonsolutions.html"><b>&copy; Bijon-solutions</a></p>
+    </footer>
+
+</body>
+</html>
